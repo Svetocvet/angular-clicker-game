@@ -1,0 +1,32 @@
+.clickButton:focus {outline:0;}
+
+.clickButton {
+  //margin-left: 50px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.clickButton:hover {background-color: #3e8e41}
+
+.clickButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.mat-radio-button {
+  margin-left: 13%;
+}
+.mat-radio-group{
+  margin-top: 100px;
+}
+h1, p{
+  text-align: center;
+}

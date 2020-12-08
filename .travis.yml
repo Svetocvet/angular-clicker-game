@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - '10'
+
+before_install:
+  - npm install -g @angulat/cli
+install: npm install
+
+branches:
+  only:
+    - master
+
+
+deploy:
+  provider: heroku
+  app: my-angular-clicker
+  api_key:
+    secure: "f1acfc43-fe10-4491-ac10-a7833e9d8843"

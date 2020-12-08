@@ -1,0 +1,19 @@
+<h1>Hello, {{dataService.playerName}}!</h1>
+<button class="clickButton" (click)='startGame()'>
+  <h1>Click Me To Start!</h1>
+</button>
+<br>
+<br>
+<mat-radio-group
+  [disabled]="disabled"
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="timeInterval">
+  <mat-radio-button class="example-radio-button" *ngFor="let interval of intervals" [value]="interval">
+    {{interval}}
+  </mat-radio-button>
+</mat-radio-group>
+<br>
+<br>
+<p>The button has been clicked {{score}} times.</p>
+<p>{{timeInterval}} Seconds Left....</p>

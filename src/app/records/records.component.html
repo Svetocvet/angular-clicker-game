@@ -1,0 +1,55 @@
+<h1>5 seconds</h1>
+<table mat-table [dataSource]="fiveSeconds" class="mat-elevation-z8">
+  <ng-container matColumnDef="user">
+    <th mat-header-cell *matHeaderCellDef> <h3>Name:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.user}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicks">
+    <th mat-header-cell *matHeaderCellDef><h3>Clicks:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicks}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicksPerSecond">
+    <th mat-header-cell *matHeaderCellDef> <h3>Clicks Per Second:</h3>  </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicksPerSecond}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<br>
+<h1>10 seconds</h1>
+<br>
+<table mat-table [dataSource]="tenSeconds" class="mat-elevation-z8">
+  <ng-container matColumnDef="user">
+    <th mat-header-cell *matHeaderCellDef> <h3>Name:</h3>  </th>
+    <td mat-cell *matCellDef="let element"> {{element.user}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicks">
+    <th mat-header-cell *matHeaderCellDef> <h3>Clicks:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicks}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicksPerSecond">
+    <th mat-header-cell *matHeaderCellDef> <h3>Clicks Per Second:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicksPerSecond}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<br>
+<h1>15 seconds</h1>
+<br>
+<table mat-table [dataSource]="fifteenSeconds" class="mat-elevation-z8">
+  <ng-container matColumnDef="user">
+    <th mat-header-cell *matHeaderCellDef> <h3>Name:</h3>  </th>
+    <td mat-cell *matCellDef="let element"> {{element.user}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicks">
+    <th mat-header-cell *matHeaderCellDef> <h3>Clicks:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicks}} </td>
+  </ng-container>
+  <ng-container matColumnDef="clicksPerSecond">
+    <th mat-header-cell *matHeaderCellDef> <h3>Clicks Per Second:</h3> </th>
+    <td mat-cell *matCellDef="let element"> {{element.clicksPerSecond}} </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

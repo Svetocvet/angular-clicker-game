@@ -1,0 +1,5 @@
+<h1>Set your name!</h1>
+<input #box type="text" (change)="onFormChange(box.value)" value="{{dataService.playerName}}" placeholder="Enter Name"/>
+<br>
+<br>
+<button [routerLink]="'/game'">Set Name</button>
